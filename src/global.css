@@ -1,0 +1,112 @@
+@import url("fonts.css");
+html, body, #root {
+    height: 100%;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout_main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.layout_subMenu {
+    height: 100%;
+    background: #f5f5f7 !important;
+    border-right: 1px solid #e1e1e2;
+}
+
+.layout_subMenu .subMenu p {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+}
+
+.layout_subMenu ul {
+    padding-left: 0;
+}
+
+.layout_subMenu li {
+    padding-left: 20px;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.layout_header {
+    height: 50px !important;
+    line-height: 50px !important;
+    background: #c62f2f !important;
+    color: #fff;
+}
+
+.layout_footer {
+    height: 50px !important;
+    background: #f5f5f7 !important;
+    padding: 0;
+    border-top: 1px solid #e1e1e2;
+}
+
+.subMenu_active {
+    background: #e6e7ea;
+    color: #000;
+}
+
+.subMenu_active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #c62f2f;
+}
+
+/*----------歌单table列表样式--------------*/
+
+.music-list .ant-table-thead>th {
+    background: #fafafa !important;
+}
+
+.music-list .ant-table-thead>tr>th {
+    border-bottom: 1px solid #e1e1e2 !important;
+    border-top: 1px solid #e1e1e2 !important;
+    border-right: 1px solid #e1e1e2 !important;
+}
+
+.music-list .ant-table-thead>tr:first-child>th:first-child {
+    border-top-left-radius: 0;
+}
+
+.music-list .ant-table-thead>tr:first-child>th:last-child {
+    border-top-right-radius: 0;
+    border-right: none !important;
+}
+
+.music-list .ant-table-tbody>tr:nth-child(even) td {
+    background: #f5f5f7 !important;
+}
+
+.music-list .ant-table-tbody>tr:nth-child(odd) td {
+    background: #fafafa !important;
+}
+
+.music-list .ant-table-tbody>tr:hover td {
+    background: #ebeced !important;
+}
+
+.music-list .ant-table-tbody>tr>td {
+    border-bottom: none;
+}
+
+.music-list .ant-table-thead>tr>th, .music-list .ant-table-tbody>tr>td {
+    padding: 5px 16px;
+}
+
+/*----------歌单table列表样式--------------*/
